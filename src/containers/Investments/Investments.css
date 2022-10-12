@@ -1,0 +1,359 @@
+.app__investments {
+    background: var(--primary-dark);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 10rem;
+}
+
+.app__investments-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 15rem;
+}
+
+.app__investments-heading {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5rem;
+}
+
+.app__investments-heading_title {
+    flex: 1.25;
+}
+
+.app__investments-heading_title h2 {
+    color: var(--primary-title);
+}
+
+.app__investments-heading_content {
+    flex: 1;
+}
+
+.app__investments-heading_content p {
+    color: var(--secondary-title);
+}
+
+.app__investments-row1,
+.app__investments-row2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 5rem;
+}
+
+.images__container {
+    position: relative;
+    display: flex;
+}
+
+.app__investments-row1 .images__container {
+    justify-content: flex-start;
+}
+
+.app__investments-row2 .images__container {
+    justify-content: flex-end;
+}
+
+.images__container,
+.project__container {
+    flex: 1;
+}
+
+
+.app__investments-row1 .images__container .funding1 {
+    z-index: 1;
+}
+
+.app__investments-row1 .images__container .funding2 {
+    align-self: center;
+    z-index: 2;
+    margin-left: -10rem;
+}
+
+.app__investments-row2 .images__container .funding3 {
+    z-index: 1;
+}
+
+.app__investments-row2 .images__container .funding4 {
+    align-self: center;
+    z-index: 2;
+    margin-right: -10rem;
+}
+
+.project__title {
+    margin-bottom: 0.5rem;
+}
+
+.project__title p {
+    font-size: 16px;
+    font-family: var(--font-base);
+    line-height: 18px;
+    letter-spacing: 0.3em;
+    color: var(--secondary-title);
+}
+
+.project__heading {
+    margin-bottom: 1rem;
+}
+
+.project__heading h3 {
+    color: var(--primary-title);
+}
+
+.project__text {
+    margin-bottom: 1.5rem;
+}
+
+.project__text p {
+    color: var(--secondary-title);
+}
+
+.project__button {
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.project__button button {
+    background: none;
+    border: none;
+    font-size: 16px;
+    font-family: var(--font-alt);
+    line-height: 16px;
+    font-weight: 600;
+    margin-right: 10px;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: var(--color-primary);
+}
+
+.project__button .hover {
+    display: none;
+}
+
+.project__button:hover .nonhover {
+    display: none;
+}
+
+.project__button:hover .hover {
+    display: block;
+}
+
+.project__button:hover button {
+    color: var(--color-secondary);
+}
+
+.app__investments-portfolios {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.app__investments-portfolios .portfolios__divider {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.app__portfolio-container {
+    width: 100%;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.app__investments1,
+.app__investments2 {
+    padding: 4rem 5rem;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.investment__container {
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+    padding: 2rem;
+}
+
+.investment__container:hover {
+    background: var(--secondary-dark);
+}
+
+.investment__container img {
+    margin-right: 2px;
+}
+
+.investment__container h4 {
+    font-size: 36px;
+    line-height: 36px;
+    font-weight: 200;
+    text-transform: uppercase;
+    color: var(--secondary-title);
+    font-family: var(--font-base);
+    cursor: pointer;
+}
+
+.investment__container:hover h4 {
+    background-image: var(--gradient-linear);
+    background-clip: text;
+    color: transparent;
+}
+
+
+
+@media screen and (max-width: 1350px) {
+    .funding1,
+    .funding3 {
+        width: 400px;
+        height: 400px;
+    }
+
+    .funding2,
+    .funding4 {
+        width: 225px;
+        height: 340px;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .funding1,
+    .funding3 {
+        width: 310px;
+        height: 310px;
+    }
+
+    .funding2,
+    .funding4 {
+        width: 155px;
+        height: 265px;
+    }
+
+    .app__investments-row1 .images__container .funding2 {
+        margin-left: -8rem;
+    }
+
+    .app__investments-row2 .images__container .funding4 {
+        margin-right: -8rem;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .app__portfolio-container {
+        flex-direction: row;
+        height: 100%;
+    }
+
+    .app__investments1,
+    .app__investments2 {
+        flex-direction: column;
+    }
+
+    .app__investments1 .investment__container,
+    .app__investments2 .investment__container {
+        margin-bottom: 5rem;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .app__investments-row1 {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .app__investments-row2 {
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+
+    .app__investments-heading {
+        flex-direction: column;
+    }
+
+    .app__investments-heading_title {
+        margin-bottom: 2rem;
+    }
+
+    .app__investments-row1 .images__container .funding2 {
+        margin-left: -5rem;
+        margin-bottom: -5rem;
+    }
+
+    .app__investments-row2 .images__container {
+        flex-direction: row-reverse;
+    }
+
+    .app__investments-row2 .images__container .funding4 {
+        margin-right: 0;
+        margin-left: -5rem;
+        margin-bottom: -5rem;
+    }
+
+    .app__investments-row1 .images__container,
+    .app__investments-row2 .images__container {
+        margin-bottom: 5rem;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .app__investments1,
+    .app__investments2 {
+        padding: 2rem;
+    }
+    .app__investments1 .investment__container h4,
+    .app__investments2 .investment__container h4 {
+        font-size: 28px;
+        line-height: 28px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .funding1,
+    .funding3 {
+        width: 225px;
+        height: 225px;
+    }
+
+    .funding2,
+    .funding4 {
+        width: 100px;
+        height: 160px;
+    }
+
+    .app__investments1,
+    .app__investments2 {
+        padding: 1rem;
+    }
+
+    .app__investments1 .investment__container h4,
+    .app__investments2 .investment__container h4 {
+        font-size: 20px;
+        line-height: 20px;
+    }
+
+    .app__investments1 .investment__container img,
+    .app__investments2 .investment__container img {
+        width: 22px;
+        height: 22px;
+    }
+
+    .investment__container {
+        padding: 1rem;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .investment__container {
+        padding: 0rem;
+    }
+}

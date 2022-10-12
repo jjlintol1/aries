@@ -1,0 +1,119 @@
+.app__team {
+    width: 100%;
+    min-height: 100vh;
+    background: var(--primary-dark);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.app__team-members {
+    flex: 1.25;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.teammember {
+    padding: 1rem;
+}
+
+.teammember__image-container {
+    display: flex;
+    justify-content: center;
+}
+
+.teammember__image-container img {
+    width: 90%;
+    height: auto;
+}
+
+.teammember__data {
+    text-align: center;
+}
+
+.teammember__data h5,
+.teammember__data p {
+    padding: 0.5rem 0;
+}
+
+.app__team-sepline {
+    height: 100vh;
+}
+
+.app__team-genius {
+    flex: 1;
+    background: var(--secondary-dark);
+    z-index: 5;
+    margin-left: 3rem;
+    padding: 15rem 5rem 5rem 5rem;
+}
+
+.app__team-genius_header {
+    margin-bottom: 1.5rem;
+}
+
+.app__team-genius_content {
+    margin-bottom: 1.5rem;
+}
+
+.app__team-genius_button {
+    cursor: pointer;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.app__team-genius_button .hover {
+    display: none;
+}
+
+.app__team-genius_button:hover .nonhover {
+    display: none;
+}
+
+.app__team-genius_button:hover .hover {
+    display: block;
+}
+
+.app__team-genius_button:hover button {
+    color: var(--color-secondary);
+}
+
+.app__team-genius_button button {
+    background: none;
+    border: none;
+    color: var(--color-primary);
+    cursor: pointer;
+    font-family: var(--font-alt);
+    text-transform: uppercase;
+    margin-right: 10px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+@media screen and (max-width: 1350px) {
+    .app__team {
+        background: var(--secondary-dark);
+        flex-direction: column;
+    }
+
+    .app__team-members {
+        justify-content: center;
+    }
+
+    .app__team-sepline {
+        display: none;
+    }
+
+    .app__team-genius {
+        margin-left: 0;
+        padding-top: 10rem;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .app__team-genius {
+        padding: 8rem 3rem 3rem 3rem;
+    }
+}

@@ -1,0 +1,225 @@
+.app__footer {
+    background: var(--primary-dark);
+}
+
+.app__footer-content {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.app__footer-level1 {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.app__footer-cta {
+    flex: 1.25;
+}
+
+.app__footer-cta h2 {
+    background-image: var(--gradient-angular);
+    background-clip: text;
+    color: transparent;
+    margin-bottom: 3rem;
+}
+
+.app__footer-form {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.app__footer-form input {
+    padding: 1.5rem;
+    width: 100%;
+    margin: 1rem 0;
+    border: none;
+    background: none;
+    color: rgba(184, 184, 184, 1);
+    border-bottom: 1px solid rgba(184, 184, 184, 1);
+    font-family: var(--font-base);
+    font-size: 22px;
+    line-height: 26px;
+}
+
+.app__footer-form input:focus {
+    outline: none;
+}
+
+.app__footer-submit {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    cursor: pointer;
+}
+
+.app__footer-submit .hover {
+    display: none;
+}
+
+.app__footer-submit button {
+    background: none;
+    border: none;
+    color: var(--color-primary);
+    cursor: pointer;
+    font-family: var(--font-alt);
+    text-transform: uppercase;
+    margin-right: 10px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.app__footer-submit:hover button {
+    color: var(--color-secondary);
+}
+
+.app__footer-submit:hover .nonhover {
+    display: none;
+}
+
+.app__footer-submit:hover .hover {
+    display: block;
+}
+
+.app__footer-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.app__footer-links_social {
+    flex: 1.25;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.app__footer-links_social a {
+    margin-right: 1.5rem;
+}
+
+.app__footer-links_privacy {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.app__footer-links_social a,
+.app__footer-links_privacy p {
+    font-size: 16px;
+    line-height: 18px;
+    font-family: var(--font-base);
+    color: var(--secondary-title);
+    text-transform: uppercase;
+    letter-spacing: 0.3em;
+    cursor: pointer;
+}
+
+.app__footer-links_social a:hover,
+.app__footer-links_privacy p:hover {
+    color: var(--color-primary);
+}
+
+
+.app__footerdivider {
+    width: 100%;
+}
+
+.app__footer-allrights {
+    padding: 5rem 0 3rem 0;
+    text-align: center;
+}
+
+.app__footer-allrights h6 {
+    color: #B8B8B8;
+    text-transform: uppercase;
+}
+
+.app__footer-allrights h6 span {
+    color: var(--color-primary);
+}
+
+@media screen and (max-width: 950px) {
+    .app__footer-level1 {
+        flex-direction: column;
+    }
+
+    .app__footer-cta {
+        flex: 1;
+        margin-bottom: 2rem;
+    }
+
+    .app__footer-form {
+        width: 100%;
+    }
+
+    .app__footer-links {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .app__footer-links_social,
+    .app__footer-links_privacy {
+        padding: 2rem;
+        width: 100%;
+        justify-content: space-evenly;
+    }
+
+    .app__footer-links_social a {
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .app__footer-links_social a,
+    .app__footer-links_privacy p {
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.2em;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .app__footer-links_social a,
+    .app__footer-links_privacy p {
+        font-size: 12px;
+        line-height: 14px;
+        letter-spacing: normal;
+    }
+
+    .app__footer-form input {
+        padding: 1rem;
+        font-size: 16px;
+        line-height: 18px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .app__footer-links_social a,
+    .app__footer-links_privacy p {
+        font-size: 10px;
+        line-height: 11px;
+        margin-bottom: 0.75em;
+    }
+
+    .app__footer-links_social,
+    .app__footer-links_privacy {
+        flex-direction: column;
+    }
+
+    .app__footer-allrights h6 {
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+
+}

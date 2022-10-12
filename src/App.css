@@ -1,38 +1,150 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.section__padding {
+    padding: 4rem 6rem;
   }
+  
+.flex__center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.h1__title {
+    font-family: var(--font-base);
+    color: var(--primary-title);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 82px;
+    line-height: 96px;
+    /* identical to box height, or 117% */
+
+    text-transform: capitalize;
 }
 
-.App-link {
-  color: #61dafb;
+.h2__title {
+    font-family: var(--font-base);
+    color: var(--primary-title);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 62px;
+    line-height: 74px;
+    /* identical to box height, or 119% */
+
+    text-transform: capitalize;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.h3__title {
+    font-family: var(--font-base);
+    color: var(--primary-title);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 44px;
+    line-height: 50px;
+    /* identical to box height, or 114% */
+
+    text-transform: capitalize;
+}
+
+.h4__title {
+    font-family: var(--font-base);
+    color: var(--primary-title);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 38px;
+    /* identical to box height, or 146% */
+
+    text-transform: capitalize;
+}
+
+.h5__title {
+    font-family: var(--font-base);
+    color: var(--primary-title);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+    /* identical to box height, or 118% */
+
+    text-transform: capitalize;
+}
+
+.h6__title {
+    font-family: var(--font-base);
+    color: var(--primary-title);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+}
+
+.bodytext__18 {
+    font-family: var(--font-alt);
+    font-size: 18px;
+    line-height: 24px;
+    color: var(--secondary-title);
+    /* identical to box height, or 133% */
+
+    text-transform: capitalize;
+}
+
+.bodytext__16 {
+    font-family: var(--font-alt);
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--secondary-title);
+    /* identical to box height, or 150% */
+}
+
+@media screen and (max-width: 400px) {
+    
+}
+
+@media screen and (max-width: 850px) {
+    .section__padding {
+      padding: 4rem;
+    }
   }
-  to {
-    transform: rotate(360deg);
+  
+  @media screen and (max-width: 650px) {
+    .section__padding {
+      padding: 4rem 2rem;
+    }
   }
+  
+  @media screen and (max-width: 450px) {
+    .h1__title {
+        font-weight: 700;
+        font-size: 42px;
+        line-height: 56px;
+    }
+
+    .h2__title {
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 44px;
+    }
+
+    .h3__title {
+        font-weight: 400;
+        font-size: 26px;
+        line-height: 30px;
+    }
+
+    .h4__title {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 23px;
+    }
+
+    .h5__title {
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    .h6__title {
+        font-size: 14px;
+        line-height: 16px;
+    }
 }
